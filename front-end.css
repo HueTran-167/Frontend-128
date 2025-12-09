@@ -598,7 +598,6 @@
     }
  }
 
- 
  .hero-animate{
     opacity:0;
     transform:translateY(40px);
@@ -641,4 +640,3 @@
 .Feature:hover img{
     transform:scale(1.15) rotate(4deg);
 }
- 

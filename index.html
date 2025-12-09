@@ -121,12 +121,48 @@
 
     </div>
 
-    <script>
-            document.addEventListener("DOMContentLoaded",()=>{
+    <div class="CHH">
+        <div class="container">
+            <div class="content">
+                <div class="heading-chh">
+                    <h1>Classmate is Here to Help</h1>
+                    <p>Let our AI do the heavy lifting for you by generating curriculum-aligned lesson plans and resources.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="Feature animate-stagger">
+                    <img src="public/svg/check-done-01.svg">
+                    <p>Hours spent creating lesson plans.</p>
+                 </div>
 
+                <div class="Feature animate-stagger">
+                    <img src="public/svg/users-01.svg">
+                    <p>Curriculum alignment pressure.</p>
+                </div>
+
+                <div class="Feature animate-stagger">
+                    <img src="public/svg/pencil-line.svg">
+                    <p>Supporting diverse learners.</p>
+                </div>
+
+                <div class="Feature animate-stagger">
+                    <img src="public/svg/message-square-02.svg">
+                    <p>Keeping materials organised.</p>
+                </div>
+            </div>
+            <div class="content">
+
+            </div>
+        </div>
+    </div>
+
+   <script>
+        document.addEventListener("DOMContentLoaded", () =>{
             document.querySelectorAll(".hero-animate")
-                .forEach(el=>el.classList.add("hero-show"));
-
+            .forEach(el=>el.classList.add("hero-show"));
+        
             const observer = new IntersectionObserver(entries=>{
                 entries.forEach(entry=>{
                     if(entry.isIntersecting){
@@ -141,12 +177,12 @@
             ).forEach(el=>observer.observe(el));
 
             document.querySelectorAll(".animate-stagger")
-            .forEach((item,i)=>{
-                item.style.transitionDelay = `${i * 0.15}s`;
-            });
+                .forEach((item,i)=>{
+                    item.style.transitionDelay = `${i * 0.15}s`;
+                });
 
-    });
-    </script>
+        });
+   </script>
 
 </body>
 </html>
